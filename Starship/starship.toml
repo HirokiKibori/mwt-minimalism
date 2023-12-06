@@ -1,0 +1,281 @@
+# ~/.config/starship.toml
+# based on: https://github.com/marcogreiveldinger/.dotfiles/blob/main/.config/starship.toml
+
+add_newline = true
+command_timeout = 1000
+
+continuation_prompt = '[󱞪](bright-black) '
+
+format = """
+$character\
+[](#172419)$os$hostname[ ](#172419)\
+[](black)$directory[ ](black)\
+[](bright-black)$git_branch\
+$git_status\
+$python\
+$aws\
+$golang\
+$java\
+$nodejs\
+$rust\
+$ruby\
+$scala\
+$dart\
+$conda\
+$pijul_channel\
+$lua\
+$rlang\
+$package\
+$buf\
+$memory_usage\
+$docker_context[ ](bright-black)\
+[](#112338)$time[ ](#112338)$cmd_duration
+[󱞪](bright-black) """
+
+[character]
+success_symbol = "[ ](#C7BB9D)"
+error_symbol = "[ ](#BF6596)"
+
+[time]
+disabled = false
+time_format = "%r" # Hour:Minute Format
+style = "bg:#112338"
+format = '[[ 󱑍 $time ](bg:#112338 fg:#8DFBD2)]($style)'
+
+[cmd_duration]
+format = 'last command: [$duration](yellow)'
+
+[os]
+format = '[$symbol](fg:bright-yellow bg:#172419)'   
+disabled = false
+
+[memory_usage]
+symbol = "󰍛 "
+disabled = true
+style='dimmed fg:bright-yellow bg:bright-black'
+threshold = 1
+format = "[$symbol ]($style)[${ram}(|${swap})]($style)[ ]($style)"
+
+# Shows the hostname
+[hostname]
+ssh_only = false
+format = '[$hostname ](fg:yellow bg:#172419)'
+disabled = false
+ssh_symbol = " "
+
+# Shows current directory
+[directory]
+truncation_length = 3
+fish_style_pwd_dir_length=2
+home_symbol = '󰋜 ~'
+read_only_style = 'fg:197 bg:#172419'
+read_only = '  '
+style = "fg:cyan bg:black"
+format = '[$path]($style)[$read_only]($read_only_style)[ ]($style)'
+
+# Shows current git branch
+[git_branch]
+symbol = " "
+format = '[$symbol$branch ]($style)'
+truncation_length = 10
+truncation_symbol = '…/'
+style = "fg:#001410 bg:bright-black"
+
+# Shows current git status
+[git_status]
+format = '[$all_status $ahead_behind ]($style)'
+style = 'fg:#001410 bg:bright-black'
+conflicted = '🏳'
+up_to_date = ' '
+untracked = ' '
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count} ⇣${behind_count}'
+behind = '⇣${count}'
+stashed = ''
+modified = ' '
+staged = '++\($count\)'
+renamed = '襁'
+deleted = ' '
+
+#---
+
+[aws]
+symbol = "  "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[buf]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[c]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[conda]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[dart]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[docker_context]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[elixir]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[elm]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[fossil_branch]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[golang]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol ]($style)[$version ($mod_version) ](fg:#001410 bg:bright-black)'
+
+[guix_shell]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[haskell]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[haxe]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[hg_branch]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[java]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[julia]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[lua]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[meson]
+symbol = "󰔷 "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[nim]
+symbol = "󰆥 "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[nix_shell]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[nodejs]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[package]
+symbol = "󰏗 "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[pijul_channel]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[python]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol ]($style)[$version](fg:#001410 bg:bright-black)'
+
+[rlang]
+symbol = "󰟔 "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[ruby]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[rust]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol ]($style)[$version](fg:#001410 bg:bright-black)'
+
+[scala]
+symbol = " "
+style = "fg:yellow bg:bright-black"
+format = '[$symbol]($style)'
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "

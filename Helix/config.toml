@@ -1,0 +1,32 @@
+theme = "base16_terminal"
+
+[editor]
+line-number = "relative"
+mouse = false
+bufferline = "multiple"
+cursorline = true
+color-modes = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = ["version-control", "file-type"]
+right = ["diagnostics", "selections", "register", "position", "separator", "total-line-numbers", "file-encoding"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = "⸽"
+skip-levels = 1
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
