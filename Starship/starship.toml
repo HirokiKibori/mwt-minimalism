@@ -101,142 +101,142 @@ deleted = ' '
 
 [aws]
 symbol = "  "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [buf]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [c]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [conda]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [dart]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [docker_context]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [elixir]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [elm]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [fossil_branch]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [golang]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol ]($style)[$version ($mod_version) ](fg:#001410 bg:bright-black)'
 
 [guix_shell]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [haskell]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [haxe]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [hg_branch]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [java]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [julia]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [lua]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [meson]
 symbol = "󰔷 "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [nim]
 symbol = "󰆥 "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [nix_shell]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [nodejs]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [package]
 symbol = "󰏗 "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [pijul_channel]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [python]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol ]($style)[$version](fg:#001410 bg:bright-black)'
 
 [rlang]
 symbol = "󰟔 "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [ruby]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [rust]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol ]($style)[$version](fg:#001410 bg:bright-black)'
 
 [scala]
 symbol = " "
-style = "fg:cyan bg:bright-black"
+style = "fg:yellow bg:bright-black"
 format = '[$symbol]($style)'
 
 [os.symbols]

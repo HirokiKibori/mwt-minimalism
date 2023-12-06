@@ -17,6 +17,22 @@ It loads starship and adds some aliases/ functions. (It's still grow over time.)
 
 [It needs to be pasted in `%home%/Documents/PowerShell`. You can find out the full path with env-var `$PROFILE`.]
 
+#### -> Terminal-Icons
+If you want to use `Terminal-Icons`, you can install and load the `dark_trees.psd1` color-theme.
+
+Add color-theme and check, if it has been added:
+```
+> Add-TerminalIconsColorTheme %home%\Documents\PowerShell\dark_trees.psd1
+> Get-TerminalIconsColorTheme
+```
+
+Set color-theme and show all icons with color:
+```
+> Set-TerminalIconsTheme -ColorTheme dark_trees
+> Show-TerminalIconsTheme
+```
+
+
 ### Font (for nearly every tool)
 Download and install for `all users` (context-menu -> Show more options). 
 
@@ -133,6 +149,12 @@ For the first time:
 Packages:
 ```
 > scoop install extras/lazygit
+> scoop install extras/terminal-icons
+```
+
+Maybe later:
+```
+> scoop install extras/psreadline
 ```
 
 

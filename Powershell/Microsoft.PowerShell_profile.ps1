@@ -1,9 +1,16 @@
+# Load modules
+#--------------
 Invoke-Expression (&starship init powershell)
+Import-Module -Name Terminal-Icons
 
+# Aliases
+#---------
 Set-Alias -Name which -Value where.exe
 Set-Alias -Name clhist -Value ClearHistoryFile
 Set-Alias -Name reload -Value Reload-PowerShell
 
+# Functions
+#-----------
 # based on: https://codepal.ai/code-generator/query/sEjpe79C/powershell-function-overwrite-empty-file
 function ClearHistoryFile {
 	$historyFile = (Get-PSReadlineOption).HistorySavePath
