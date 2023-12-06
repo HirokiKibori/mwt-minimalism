@@ -1,0 +1,84 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        }
+    ],
+    "alwaysOnTop": false,
+    "alwaysShowNotificationIcon": true,
+    "centerOnLaunch": true,
+    "confirmCloseAllTabs": false,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "experimental.rendering.forceFullRepaint": false,
+    "firstWindowPreference": "defaultProfile",
+    "initialCols": 242,
+    "initialPosition": ",",
+    "initialRows": 60,
+    "language": "en-US",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "newTabPosition": "afterCurrentTab",
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "adjustIndistinguishableColors": "never",
+            "antialiasingMode": "cleartype",
+            "bellStyle": "audible",
+            "closeOnExit": "graceful",
+            "compatibility.reloadEnvironmentVariables": true,
+            "cursorShape": "filledBox",
+            "experimental.retroTerminalEffect": false,
+            "font": 
+            {
+                "face": "CaskaydiaCove Nerd Font",
+                "size": 13.0,
+                "weight": "semi-light"
+            },
+            "historySize": 9000,
+            "intenseTextStyle": "none",
+            "opacity": 85,
+            "padding": "5",
+            "scrollbarState": "always",
+            "startingDirectory": "%home%\\Documents\\git",
+            "suppressApplicationTitle": false,
+            "useAcrylic": false,
+            "useAtlasEngine": true
+        }
+    },
+    "showTabsInTitlebar": true,
+    "theme": "dark",
+    "themes": [],
+    "trimBlockSelection": true,
+    "useAcrylicInTabRow": true
+}
