@@ -10,7 +10,7 @@ First install all software you're need and change configurations later.
 ## Setup
 
 ### PowerShell
-Over Win-store (v 7+/ core) and set as default in `Terminal`.
+Install over Win-store (v 7+/ core) and set as default in `Terminal`.
 
 Settings, color-scheme and config (`Microsoft.PowerShell_profile.ps1`) are in subfolder `Powershell`.  
 It loads starship and adds some aliases/ functions. (It's still grow over time.)
@@ -39,6 +39,21 @@ The config `starship.toml` in subfolder `Starship` is currently a begin and need
 The config `config.toml` in subfolder `Helix` is currently a begin and needs some improvements over time.  
 [It needs to be pasted in `%home%/scoop/persist/helix`.]
 
+### VS-Code
+The config `default.code-profile` in subfolder `VS-Code` is the default I'm using.  
+The other configs are for other languages or workflows.
+
+### Notepad++
+The gui-config `config.txt` in subfolder `Notepad++` needs to be pasted in the config of Notepad++.  
+[Configs and plugins are stored in `%AppData%\Notepad++\`.]
+
+Installed plugins are:
+- ComparePlugin
+- DSpellCheck
+- mimeTools
+- NppConverter
+- NppExport
+
 
 ## Software (win)
 Tools for development i'm currently using on windows.
@@ -47,10 +62,18 @@ Tools for development i'm currently using on windows.
 Can be used to install, uninstall and update software.
 
 #### -> git
-If git is unable to install over winget -> download it and run setup manually.
+If git is unable to install over winget -> download it and run the setup manually.
 ```
 > Start-Process powershell -Verb runAs
 > winget install --id Git.Git -e --source winget
+```
+
+Configure user and mail:
+```
+> git config --global user.name "XYZ"
+> git config --global user.email "XXX@yyy.zzz"
+
+> git config --list
 ```
 
 #### -> others

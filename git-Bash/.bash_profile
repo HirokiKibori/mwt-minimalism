@@ -15,7 +15,7 @@ agent_load_env
 agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
 
 # set own filename and path
-export sk="~/.ssh/XXX"
+export sk=~/.ssh/XXX
 
 if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
     agent_start
