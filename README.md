@@ -114,6 +114,7 @@ Packages:
 ```
 > scoop install main/helix
 > scoop install main/tldr
+> scoop install main/make
 ```
 
 Languages:
