@@ -10,7 +10,7 @@ First install all software you're need and change configurations later.
 ## Setup
 
 ### PowerShell
-Install over Win-store (v 7+/ core) and set as default in `Terminal`.
+Install over Win-store (v 7+/ core) and set it as default in `Terminal`.
 
 Settings, color-scheme and config (`Microsoft.PowerShell_profile.ps1`) are in subfolder `Powershell`.  
 It loads starship and adds some aliases/ functions. (It's still grow over time.)
@@ -22,6 +22,16 @@ Download and install for `all users` (context-menu -> Show more options).
 
 [Nerd Fonts](https://www.nerdfonts.com/font-downloads):
 - CaskaydiaCove Nerd Font
+
+### WSL2
+WSL2 is used for docker and vms.
+
+```
+> Start-Process powershell -Verb runAs
+> wsl --install
+
+> wsl --set-default-version 2
+```
 
 ### git-Bash
 I'm using the profile (`.bash_profile`) in subfolder `git-Bash` since many years.  
