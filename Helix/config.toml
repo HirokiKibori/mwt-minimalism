@@ -28,5 +28,10 @@ render = true
 character = "⸽"
 skip-levels = 1
 
+[editor.soft-wrap]
+enable = true
+max-wrap = 25
+max-indent-retain = 0
+
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
