@@ -170,23 +170,28 @@ Install [Scoop](https://scoop.sh/) for user-software.
 
 My currently installed apps:
 ```shell
-Name            Source
-----            ------
+Name            Source 
+----            ------ 
 7zip            main   
 cmake           main   
 corretto-jdk    java   
-dark            main   
+gcc             main   
+ghcup           main   
 git             main   
 go              main   
+golangci-lint   main   
 helix           main   
+jdtls           main   
 lazygit         extras 
+llvm            main   
 make            main   
 marksman        main   
 msys2           main   
 posh-git        extras 
 python          main   
 ruby            main   
-rust            main   
+rustup          main   
+sqlite          main   
 terminal-icons  extras 
 tldr            main   
 ```

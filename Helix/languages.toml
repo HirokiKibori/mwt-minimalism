@@ -19,6 +19,38 @@ completion = [ { name = "binary", completion = "filename" } ]
 args = { program = "{0}", runInTerminal = true }
 
 
+### --- C --- ###
+[[language]]
+name = "c"
+
+[language.debugger]
+name = "lldb-dap"
+transport = "stdio"
+command = "lldb-dap"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+completion = [ { name = "binary", completion = "filename" } ]
+args = { program = "{0}", runInTerminal = true }
+
+
+### --- CPP --- ###
+[[language]]
+name = "cpp"
+
+[language.debugger]
+name = "lldb-dap"
+transport = "stdio"
+command = "lldb-dap"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+completion = [ { name = "binary", completion = "filename" } ]
+args = { program = "{0}", runInTerminal = true }
+
+
 ### --- Phython--- ###
 [[language]]
 name = "python"
