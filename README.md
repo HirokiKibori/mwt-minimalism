@@ -203,8 +203,49 @@ tldr            main
 ```
 
 
-## Software (vm: deb)
-Tools for development i'm currently using on linux (vm on win - debian).
+## Configure LSPs
+Some stuff to activate LSPs for Helix.
+To test these LSPs, example files are in folder `LSP-Tests`.
 
+Some LSPs need more configuration for helix. So you need to add `languages.toml`
+to `%AppData%\helix\`.
+
+For more information read [helix-WiKi](https://github.com/helix-editor/helix/wiki/Language-Server-Configurations)
+
+### python
+Update pip:
+```
+python -m pip install --upgrade pip
+```
+
+Install python-lsp-server:
+```
+pip install pyright
+pip install ruff-lsp
+pip install black
+```
+
+### rust
+Add rust-analyzer to rustup, to get the lsp running:
+```
+rustup component add rust-analyzer
+```
+
+Activate gnu-toolchain:
+```
+rustup set default-host x86_64-pc-windows-msvc
+```
+
+### Go
+Install LSPs:
+```
+go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/nametake/golangci-lint-langserver@latest
+```
+
+
+## Software (vm: deb)
 Use Win-Store and add as profile to Terminal. (Installation over powershell is supported, too.)  
 I'm currently using debian.
