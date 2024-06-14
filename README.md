@@ -215,34 +215,56 @@ For more information read [helix-WiKi](https://github.com/helix-editor/helix/wik
 ### python
 Update pip:
 ```
-python -m pip install --upgrade pip
+> python -m pip install --upgrade pip
 ```
 
 Install python-lsp-server:
 ```
-pip install pyright
-pip install ruff-lsp
-pip install black
+> pip install pyright
+> pip install ruff-lsp
+> pip install black
+```
+
+### CMake
+Install LSP:
+```
+> pip install cmake-language-server
 ```
 
 ### rust
 Add rust-analyzer to rustup, to get the lsp running:
 ```
-rustup component add rust-analyzer
+> rustup component add rust-analyzer
 ```
 
 Activate gnu-toolchain:
 ```
-rustup set default-host x86_64-pc-windows-msvc
+> rustup set default-host x86_64-pc-windows-msvc
+```
+
+### Markdown
+Install LSPs:
+```
+> cargo install --git https://github.com/Feel-ix-343/markdown-oxide.git markdown-oxide
 ```
 
 ### Go
 Install LSPs:
 ```
-go install golang.org/x/tools/gopls@latest
-go install github.com/go-delve/delve/cmd/dlv@latest
-go install golang.org/x/tools/cmd/goimports@latest
-go install github.com/nametake/golangci-lint-langserver@latest
+> go install golang.org/x/tools/gopls@latest
+> go install github.com/go-delve/delve/cmd/dlv@latest
+> go install golang.org/x/tools/cmd/goimports@latest
+> go install github.com/nametake/golangci-lint-langserver@latest
+```
+
+### Java
+Ready after installing the `jdtls` package with sccop.
+
+### ruby
+Install LSP:
+```
+> gem install solargraph
+> gem install rubocop
 ```
 
 
