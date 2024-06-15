@@ -276,3 +276,12 @@ Install LSP:
 ## Software (vm: deb)
 Use Win-Store and add as profile to Terminal. (Installation over powershell is supported, too.)  
 I'm currently using debian.
+
+
+## MISC
+
+### haskell
+If you want to get loaded modules and the `λ` sign to `hgci`, you can set this in the config (`%AppData%/ghc/ghci.conf`):
+```
+:set prompt "\n%s\n\x03BB> "
+```
