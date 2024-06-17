@@ -170,17 +170,19 @@ Install [Scoop](https://scoop.sh/) for user-software.
 
 My currently installed apps:
 ```shell
-Name            Source 
-----            ------ 
+Name            Source
+----            ------
 7zip            main   
 cmake           main   
 corretto-jdk    java   
+dark            main   
 gcc             main   
 ghcup           main   
 git             main   
 go              main   
 golangci-lint   main   
 helix           main   
+innounp         main   
 jdtls           main   
 lazygit         extras 
 llvm            main   
@@ -259,7 +261,6 @@ Install LSPs:
 > go install golang.org/x/tools/gopls@latest
 > go install github.com/go-delve/delve/cmd/dlv@latest
 > go install golang.org/x/tools/cmd/goimports@latest
-> go install github.com/nametake/golangci-lint-langserver@latest
 ```
 
 ### Java
