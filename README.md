@@ -272,7 +272,7 @@ And after installing `golangci-lint` with scoop:
 Ready after installing the `jdtls` package with sccop.
 
 ### ruby
-Install LSP:
+Install LSP (you have to run `ridk install` first):
 ```
 > gem install solargraph
 > gem install rubocop
