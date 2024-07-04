@@ -50,7 +50,7 @@ Set color-theme and show all icons with color:
 
 
 ### WSL2
-WSL2 is used for docker and vms. So run in admin-mode:
+WSL2 is used for docker and vms. So run while logged into an admin-account:
 
 ```
 > Start-Process powershell -Verb runAs
