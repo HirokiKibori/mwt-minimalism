@@ -263,6 +263,11 @@ Install LSPs:
 > go install golang.org/x/tools/cmd/goimports@latest
 ```
 
+And after installing `golangci-lint` with scoop:
+```
+> go install github.com/nametake/golangci-lint-langserver@latest
+```
+
 ### Java
 Ready after installing the `jdtls` package with sccop.
 
